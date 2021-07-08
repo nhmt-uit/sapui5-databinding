@@ -10,7 +10,7 @@ sap.ui.require([
         var oProductModel = new JSONModel();
 		oProductModel.loadData("./model/Products.json");
 		sap.ui.getCore().setModel(oProductModel, "products");
-        
+
 		var oModel = new JSONModel({
 			firstName: "Harry",
 			lastName: "Hawk",
@@ -22,6 +22,7 @@ sap.ui.require([
 				country: "Germany"
 			},
 			salesAmount: 12345.6789,
+            priceThreshold: 20,
 			currencyCode: "EUR"
 		});
 
